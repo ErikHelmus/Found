@@ -1,0 +1,338 @@
+/* Define custom colors */
+:root {
+    --blue: rgb(58, 48, 199);
+    --white: rgb(255, 255, 251);
+    --black: rgb(35, 31, 32);
+}
+
+/* Reset default styles for body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue);
+}
+
+/* Global typography styles */
+h1, h2, h3, h4, p, li, a, label {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    color: var(--white);
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.9rem;
+}
+
+h2, input {
+    font-size: 2.4rem;
+}
+
+h3, label {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+/* Button styles */
+button, .detail-div button {
+    color: var(--blue);
+    background-color: var(--white);
+    font-weight: 700;
+    border-radius: 1.25rem;
+    border-style: solid;
+    border-color: var(--blue);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    max-width: 90%;
+}
+
+button:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    border-color: var(--white);
+    border-style: 0.2rem solid;
+}
+
+/* List styles */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Cart styles */
+.cart {
+    max-width: 15;
+}
+
+/* Logo styles */
+.logo {
+    max-width: 12rem;
+}
+
+/* Menu styles */
+#menu {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2rem;
+    padding: 1rem 4rem;
+    font-size: 1.88rem;
+    position: relative;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#menu-toggle {
+    display: none;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+#menu.active {
+    display: flex;
+    background-color: var(--blue);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+/* Home hero image styles */
+#home-hero img {
+    min-width: 100%;
+}
+
+/* Shop and detail styles */
+.shop-text, .detail-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-div p {
+    max-width: 70%;
+}
+
+.detail-div h4, .detail-div h3 {
+    line-height: 0;
+}
+
+#all-products, .shop-banner, #product-details, .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.about-text {
+    padding: 2rem;
+}
+
+#all-products img, #process-gallery img, #about-image img, #home-hero img, .shop-banner img, .image-div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#process-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Product details styles */
+.name {
+    float: left;
+}
+
+.price {
+    float: right;
+}
+
+.mainImage:hover {
+    opacity: 0.4;
+}
+
+.detail-div button {
+    max-width: 30%;
+}
+
+/* Quebecois styles */
+.quebecois {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+/* Checkout styles */
+.checkout {
+    margin: 2rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.personal-form, .payment-form, .shipping-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.personal-form form, .payment-form form, .shipping-form form {
+    width: 100%;
+    max-width: 25rem;
+}
+
+/* Footer and Review styles */
+.footer-container, .review-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.review-container {
+    padding-top: 15rem;
+}
+
+.links, .review-content {
+    text-align: center;
+    margin: 0 1rem;
+    min-width: 9rem;
+}
+
+.links h3 {
+    margin-bottom: 0.5rem;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    line-height: 2rem;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 52rem) {
+    #menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        border: none;
+        padding: 0.625rem;
+    }
+    
+    #menu-toggle {
+        display: block;
+    }
+    
+    #menu.active {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: auto;
+        top: 0;
+        bottom: auto;
+    }
+    
+    nav {
+        padding: 0rem;
+    }
+    
+    .logo {
+        padding: 1rem;
+        max-width: 4rem;
+    }
+    
+    .quebecois {
+        font-size: 2.5rem;
+    }
+    
+    #process-gallery, #all-products, .shop-banner, #product-details, .about, .checkout {
+        grid-template-columns: 1fr;
+    }
+    
+    .shop-text, .detail-div {
+        margin: 0rem 0.5rem;
+    }
+    
+    .shop-text, .detail-div {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0;
+    }
+    
+    .footer-container {
+        flex-wrap: wrap;
+    }
+    
+    .links {
+        margin: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+    }
+    
+    h2, h3, input, label {
+        font-size: 1.2rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 36rem) {
+    .shop-text, .detail-div {
+        align-items: center;
+    }
+
+    .detail-div button {
+        max-width: 100%;
+    }
+
+    .detail-div p {
+        max-width: 90%;
+    }
+}

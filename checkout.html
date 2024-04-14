@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Checkout</title>
+    <!-- External CSS -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/eig3fkm.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo -->
+            <img src="images/Found-Logo.svg" class="logo" alt="Found" />
+            <!-- Menu Toggle Button -->
+            <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <!-- Menu Items -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shelves</a></li>
+                <li><a href="#about-image">About</a></li>
+                <li><a href="#">EN</a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Review Container -->
+    <div class="review-container"> 
+        <div class="review-content"> 
+            <h1>Your Order:</h1>
+            <h3>Nothing Yet!..... $0.00</h3>
+        </div>
+    </div>
+    <!-- Checkout Form -->
+    <div class="checkout"> 
+        <div class="personal-form"> 
+            <form>
+                <h2>Personal</h2>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+            </form>
+        </div>
+        <div class="payment-form"> 
+            <form>
+                <h2>Payment</h2>
+                <label for="card">Card Number:</label><br>
+                <input type="text" id="card" name="card"><br>
+                <label for="expiry">Expiry:</label><br>
+                <input type="text" id="expiry" name="expiry"><br>
+                <label for="cvv">CVV:</label><br>
+                <input type="text" id="cvv" name="cvv"><br>
+            </form>
+        </div>
+        <div class="shipping-form"> 
+            <form>
+                <h2>Shipping</h2>
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country"><br>
+                <label for="province">Province:</label><br>
+                <input type="text" id="province" name="province"><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+                <label for="postal">Postal Code:</label><br>
+                <input type="text" id="postal" name="postal"><br>
+                <label for="appt">Appt #:</label><br>
+                <input type="text" id="appt" name="appt"><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container"> 
+            <!-- Footer Links -->
+            <div class="links">
+                <h3>Products</h3> 
+                <ul>
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">Seats</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Shelves</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Professionals</h3> 
+                <ul>
+                    <li><a href="#">Trade Program</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Technical Sheets</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Sample Box</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Contact</h3> 
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Socials</h3> 
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Help</h3> 
+                <ul>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- External JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="./js/checkout.js"></script>
+</html>
